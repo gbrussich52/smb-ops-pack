@@ -40,5 +40,7 @@
         "description": "SECRET placeholder for the sheets backend. Set only in Configure/env. Never commit."
       }
     }
-  }
+  },
+  "repository": "https://github.com/gbrussich52/smb-ops-pack",
+  "homepage": "https://github.com/gbrussich52/smb-ops-pack"
 }

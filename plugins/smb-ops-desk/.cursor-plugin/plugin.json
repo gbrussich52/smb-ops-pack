@@ -16,5 +16,7 @@
     "booking",
     "reviews"
   ],
-  "logo": "assets/logo.svg"
+  "logo": "assets/logo.svg",
+  "repository": "https://github.com/gbrussich52/smb-ops-pack",
+  "homepage": "https://github.com/gbrussich52/smb-ops-pack"
 }
