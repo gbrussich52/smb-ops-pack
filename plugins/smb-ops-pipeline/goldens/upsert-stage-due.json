@@ -1,0 +1,14 @@
+{
+  "_comment": "Grok Bot, 2026-10-15: synthetic lead only (example.com). upsert -> set_stage -> set_next_action -> list_due_actions.",
+  "steps": [
+    {"tool": "pipeline_init_sheet", "args": {"title": "Golden Pipeline"}, "expect": {"created": true}},
+    {"tool": "pipeline_upsert_contact", "args": {"name": "Pat Example", "email": "pat@example.com", "phone": "555-0100", "source": "gmail", "offer": "Gutter cleaning", "valueEstimate": "250", "notes": "Asked for a quote Saturday"}, "expect": {"stage": "new", "email": "pat@example.com"}, "save": "contactId"},
+    {"tool": "pipeline_upsert_contact", "args": {"email": "PAT@example.com", "company": "Pat's Place"}, "expect": {"company": "Pat's Place", "name": "Pat Example"}, "expectSameId": true},
+    {"tool": "pipeline_set_stage", "args": {"contactId": "$contactId", "stage": "quoted"}, "expect": {"stage": "quoted"}},
+    {"tool": "pipeline_set_stage", "args": {"contactId": "$contactId", "stage": "maybe"}, "expectError": "stage must be one of"},
+    {"tool": "pipeline_set_next_action", "args": {"contactId": "$contactId", "nextAction": "Follow up on quote", "dueAt": "2026-10-14T15:00:00Z"}, "expect": {"nextAction": "Follow up on quote"}},
+    {"tool": "pipeline_list_due_actions", "args": {"before": "2026-10-15T00:00:00Z"}, "expectList": [{"contactId": "$contactId", "nextAction": "Follow up on quote", "dueAt": "2026-10-14T15:00:00Z"}]},
+    {"tool": "pipeline_list_due_actions", "args": {"before": "2026-10-13T00:00:00Z"}, "expectList": []},
+    {"tool": "pipeline_init_sheet", "args": {}, "expect": {"created": false}}
+  ]
+}

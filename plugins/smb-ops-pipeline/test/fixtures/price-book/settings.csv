@@ -1,0 +1,5 @@
+Setting,Value,What it means
+materials_tax_pct,8.875,EXAMPLE
+default_markup_pct,30,EXAMPLE
+minimum_charge,250,EXAMPLE
+currency,USD,

@@ -1,0 +1,12 @@
+Item ID,Name,Aliases (separate with ;),Unit,Supplier Cost,Markup %,Sell Price (optional override),Labor Hours per Unit,Labor Rate Name,Category,Notes,Taxable (Y/N)
+EX-E01,4in LED high hat,high hat; recessed light; can light; pot light,each,18,40,,0.75,Journeyman,Lighting,,Y
+EX-E02,12/2 Romex,12/2; 12-2; 12/2 wire,ft,0.85,35,,0.02,Helper,Wire,,Y
+EX-E03,14/2 Romex,14/2; 14-2,ft,0.65,35,,0.02,Helper,Wire,,Y
+EX-E04,20A circuit (breaker + home run),20 amp circuit; 20A circuit; dedicated circuit,each,22,,185,2,Journeyman,Circuits,,Y
+EX-E05,Single-pole switch,switch; light switch,each,3.5,50,,0.33,Journeyman,Devices,,Y
+EX-E06,Dimmer switch,dimmer,each,24,40,,0.5,Journeyman,Devices,,Y
+EX-E07,Duplex receptacle,outlet; receptacle; plug,each,2.75,50,,0.33,Journeyman,Devices,,Y
+EX-E08,Electrical permit,permit,each,150,0,,0,,Fees,Pass-through,N
+EX-M01,Natural stone veneer,stone veneer; veneer,sq ft,9.5,30,,0.25,Mason,Masonry,,Y
+EX-M02,Type S mortar (80 lb bag),mortar; type s,bag,8,25,,0,,Masonry,,Y
+EX-M03,Concrete block 8in,cmu; block; cinder block,each,2.1,30,,0.1,Mason,Masonry,,Y

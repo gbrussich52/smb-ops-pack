@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "smb-ops-pipeline": {
+      "command": "node",
+      "args": ["${CURSOR_PLUGIN_ROOT}/src/server.mjs"],
+      "env": {
+        "PIPELINE_BACKEND": "${PIPELINE_BACKEND}",
+        "PIPELINE_SPREADSHEET_ID": "${PIPELINE_SPREADSHEET_ID}",
+        "GOOGLE_OAUTH_REFRESH_TOKEN": "${GOOGLE_OAUTH_REFRESH_TOKEN}"
+      }
+    }
+  }
+}
