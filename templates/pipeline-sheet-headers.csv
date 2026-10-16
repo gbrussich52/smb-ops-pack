@@ -1,0 +1,9 @@
+# Tab: Contacts
+contactId,name,email,phone,company,stage,source,offer,valueEstimate,nextAction,dueAt,notes,createdAt,updatedAt
+# Tab: Interactions
+interactionId,contactId,at,channel,direction,summary
+# Tab: Config
+key,value
+schemaVersion,1
+ownerEmail,
+timezone,

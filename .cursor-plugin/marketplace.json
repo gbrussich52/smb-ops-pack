@@ -1,0 +1,22 @@
+{
+  "name": "smb-ops-pack",
+  "owner": {
+    "name": "Giani Ventures LLC"
+  },
+  "metadata": {
+    "description": "Front Desk Ops: inbox triage, lead follow-up, booking, a simple Sheets pipeline, and review drafts for solo local service businesses. Draft-before-send by default.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "smb-ops-desk",
+      "source": "./plugins/smb-ops-desk",
+      "description": "Front desk skills, rules, and agent for solo service businesses: Gmail triage, lead replies, booking, reviews, price-book estimates (draft-before-send)"
+    },
+    {
+      "name": "smb-ops-pipeline",
+      "source": "./plugins/smb-ops-pipeline",
+      "description": "Thin 10-tool pipeline MCP over one Google Sheet (stdio; file backend for local use)"
+    }
+  ]
+}

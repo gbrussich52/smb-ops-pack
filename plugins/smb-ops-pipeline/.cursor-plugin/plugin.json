@@ -1,0 +1,44 @@
+{
+  "name": "smb-ops-pipeline",
+  "displayName": "SMB Ops Pipeline",
+  "version": "0.1.0",
+  "description": "Ten boring, stable pipeline tools over one Google Sheet (Contacts / Interactions / Config). stdio MCP.",
+  "author": {
+    "name": "Giani Ventures LLC"
+  },
+  "license": "MIT",
+  "keywords": [
+    "crm",
+    "pipeline",
+    "google-sheets",
+    "smb",
+    "front-desk",
+    "mcp"
+  ],
+  "logo": "assets/logo.svg",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "PIPELINE_SPREADSHEET_ID": {
+        "type": "string",
+        "title": "Pipeline Spreadsheet Id",
+        "description": "Google Sheet id created during getting-started (pipeline_init_sheet or Drive fallback). Not a secret."
+      },
+      "PIPELINE_BACKEND": {
+        "type": "string",
+        "title": "Pipeline Backend",
+        "description": "file (default, local JSON) or sheets (Google Sheets API adapter; stub in v0.1).",
+        "enum": [
+          "file",
+          "sheets"
+        ],
+        "default": "file"
+      },
+      "GOOGLE_OAUTH_REFRESH_TOKEN": {
+        "type": "string",
+        "title": "Google Oauth Refresh Token",
+        "description": "SECRET placeholder for the sheets backend. Set only in Configure/env. Never commit."
+      }
+    }
+  }
+}

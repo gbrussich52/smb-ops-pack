@@ -1,0 +1,20 @@
+{
+  "name": "smb-ops-desk",
+  "displayName": "Front Desk Ops",
+  "version": "0.1.0",
+  "description": "Front desk for solo service businesses: triage Gmail, draft lead replies for approval, book on Google Calendar, keep a simple pipeline, draft review asks/replies.",
+  "author": {
+    "name": "Giani Ventures LLC"
+  },
+  "license": "MIT",
+  "keywords": [
+    "smb",
+    "front-desk",
+    "gmail",
+    "calendar",
+    "leads",
+    "booking",
+    "reviews"
+  ],
+  "logo": "assets/logo.svg"
+}
